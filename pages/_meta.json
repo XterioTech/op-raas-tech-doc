@@ -16,7 +16,7 @@
   "verify": "Verify contract on Blockscout",
   "website": {
     "title": "Website ↗",
-    "href": "https://google.com",
+    "href": "https://www.xter.io",
     "newWindow": true
   },
   "sepC": {
@@ -32,12 +32,12 @@
 
   "explorer": {
     "title": "Block Explorer ↗",
-    "href": "https://google.com",
+    "href": "https://bnb.xterscan.io",
     "newWindow": true
   },
   "info": {
     "title": "Rollup Info Page ↗",
-    "href": "https://google.com",
+    "href": "https://rollup-info.altlayer.io/garment-primary-minute/xterio",
     "newWindow": true
   }
 }
