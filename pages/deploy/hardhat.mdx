@@ -85,9 +85,9 @@ Modify the Hardhat configuration file and create a secure file to store your pri
             url: "https://eth-rinkeby.alchemyapi.io/v2/123abc123abc123abc123abc123abcde",
             accounts: [privateKey]
         },
-        <EnvText envKey="projectName"/>: {
-            url: "https://<EnvText envKey="projectName"/>-testnet.alt.technology/",  // <EnvText envKey="networkName"/> RPC URL Here
-            chainId: 1637450, // <EnvText envKey="networkName"/>ID Here
+        xterioTestnet: {
+            url: "https://xterio-testnet.alt.technology/",  // XterioTestnet RPC URL Here
+            chainId: 1637450, // XterioTestnet Chain ID Here
         }
     },
     }
@@ -135,5 +135,5 @@ Modify the Hardhat configuration file and create a secure file to store your pri
     ```
 4. Deploy `your_contract.sol` using the command below
     ```
-    npx hardhat run scripts/deploy.js --network <EnvText envKey="projectName"/>
+    npx hardhat run scripts/deploy.js --network xterioTestnet
     ```
