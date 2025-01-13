@@ -23,13 +23,11 @@
     "title": "Tools",
     "type": "separator"
   },
-  "bridge_outer": {
-    "title":"Bridge UI",
-    "theme": {
-      "layout": "full"
-    }
+  "bridge": {
+    "title": "Standard Bridge ↗",
+    "href": "https://bnb-bridge.xter.io/",
+    "newWindow": true
   },
-
   "explorer": {
     "title": "Block Explorer ↗",
     "href": "https://bnb.xterscan.io",
