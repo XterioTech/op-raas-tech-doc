@@ -70,18 +70,17 @@ System contracts on Layer1 and Layer2 are an important part of the OP ecosystem.
 
 ## Key parameters
 
-| Name                             | Introduction                                 |
-|----------------------------------|----------------------------------------------|
-|l1BlockTime|the rollup block interval|
-|l2OutputOracleSubmissionInterval|The L2 block interval for submiting OutputRoot to L2OutputOracle (how many l2 block submit once)|
-|channelTimeout|Maximum number of L1 blocks that a transaction channel frame can be considered valid|
-|finalizationPeriodSeconds|Number of seconds that a proposal must be available to challenge before it is considered finalized by the OptimismPortal contract|
-|proxyAdminOwner|The proxy owner for layer1 contract, the most important key for op|
-|finalSystemOwner|The owner of the contract SystemConfig|
-|baseFeeVaultRecipient / l1FeeVaultRecipient / sequencerFeeVaultRecipient|The fee that the rollup withdraw from rollup users|
-|batchSenderAddress|Used in op-batcher to submit rollup block to layer1|
-|l2OutputOracleProposer|Used in op-proposer to submit OutputRoot to layer1|
-|gasPriceOracleOverhead|The initial value of the gas overhead in the GasPriceOracle predeploy|
-|gasPriceOracleScalar|The initial value of the gas scalar in the GasPriceOracle predeploy|
-|l2GenesisBlockGasLimit|Initial block gas limit|
-|l2GenesisBlockBaseFeePerGas|Initial base fee|
+| Name                             | Introduction                                 | Value (Mainnet)                              |
+|----------------------------------|----------------------------------------------|----------------------------------------------|
+|l2BlockTime|the rollup block interval|2s|
+|l2OutputOracleSubmissionInterval|The L2 block interval for submiting OutputRoot to L2OutputOracle (how many l2 block submit once)|1800|
+|channelTimeout|Maximum number of L1 blocks that a transaction channel frame can be considered valid|1200|
+|finalizationPeriodSeconds|Number of seconds that a proposal must be available to challenge before it is considered finalized by the OptimismPortal contract|604800|
+|proxyAdminOwner|The proxy owner for layer1 contract, the most important key for op|[0x42C0...65BC](https://bscscan.com/address/0x42C07F0639fFeE1AB590B14F2D4682Dd24Af65BC)|
+|finalSystemOwner|The owner of the contract SystemConfig|[0xd120...e2bB](https://bscscan.com/address/0xd120C689138469EB8b0Bf1A7C0b33bd75511e2bB)|
+|batchSenderAddress|Used in op-batcher to submit rollup block to layer1|[0x64B6D...1d37](https://bscscan.com/address/0x64B6D4035AEA6cd95C345aF67605831753631d37)|
+|l2OutputOracleProposer|Used in op-proposer to submit OutputRoot to layer1|[0x94B1...Dad3](https://bscscan.com/address/0x94B11316b1f4e67018fcFA10e180432B348eDad3)|
+|gasPriceOracleOverhead|The initial value of the gas overhead in the GasPriceOracle predeploy|188|
+|gasPriceOracleScalar|The initial value of the gas scalar in the GasPriceOracle predeploy|684000|
+|l2GenesisBlockGasLimit|Initial block gas limit|0x1c9c380|
+|l2GenesisBlockBaseFeePerGas|Initial base fee|0x3b9aca00|
